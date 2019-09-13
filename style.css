@@ -39,7 +39,10 @@ body {
     font-size: 3rem;
     font-weight: 300;
 }
-
+.quiz {
+font-size: 1rem;
+color:red;
+}
 .btn__start {
     padding: 1rem 2rem;
     margin-top: 6rem;

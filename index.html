@@ -19,7 +19,11 @@
             <img src="img/survival-food-burger.jpg" alt="Hamburgare" class="survival__question--img">
         </div>
         <div class="survival__question--block">
+            <form name="quizForm" onsubmit="return submitAnswers()">
             <h2 class="heading2">Vad blir det för mat?</h2>
+            <input type="radio" name="q1" value="a" id="q1a">a.Skaldjursplatå<br>
+            <input type="radio" name="q1" value="b" id="q1b">b.Pasta <br>
+            <input type="radio" name="q1" value="c" id="q1c">c.En cheese <br>
         </div>
     </section>
     <section class="survival__question" id="survival-safety">
@@ -28,6 +32,9 @@
         </div>
         <div class="survival__question--block">
             <h2 class="heading2">Mobilen dör – vad gör du?</h2>
+            <input type="radio" name="q2" value="a" id="q2a">a.Powerbank<br>
+            <input type="radio" name="q2" value="b" id="q2b">b. Ger upp på livet<br>
+            <input type="radio" name="q2" value="c" id="q2c">c. Tar fram vevladdaren<br>
         </div>
     </section>
     <section class="survival__question" id="survival-sleep">
@@ -36,6 +43,9 @@
         </div>
         <div class="survival__question--block">
                 <h2 class="heading2">Hur ligger du?</h2>
+                <input type="radio" name="q2" value="a" id="q2a">a.Hela natten<br>
+                <input type="radio" name="q2" value="b" id="q2b">b.En snabbis<br>
+                <input type="radio" name="q2" value="c" id="q2c">c.Någon timme<br>
         </div>
     </section>
     <section class="survival__question" id="survival-water">
@@ -44,6 +54,9 @@
         </div>
         <div class="survival__question--block">
                 <h2 class="heading2">Vad klarar du dig inte utan?</h2>
+                <input type="radio" name="q2" value="a" id="q2a">a.Bärs<br>
+                <input type="radio" name="q2" value="b" id="q2b">b.Vatten<br>
+                <input type="radio" name="q2" value="c" id="q2c">c.Kaffeeeee<br>
         </div>
     </section>
     <section class="survival__question" id="survival-heat">
@@ -52,7 +65,15 @@
         </div>
         <div class="survival__question--block">
                 <h2 class="heading2">Det är kallt inne – hur värmer du dig?</h2>
+                <input type="radio" name="q3" value="a" id="q3a">a.Tänder eldstaden/gasolkaminen<br>
+                <input type="radio" name="q3" value="b" id="q3b">b.Värme? Usch!<br>
+                <input type="radio" name="q3" value="b" id="q3b">c.Tar på mig extra kläder<br>   
         </div>
+        
+    </section>
+    <section>
+        <input type="submit" value="Submit Answers">
+    </form>
     </section>
 </body>
 </html>
