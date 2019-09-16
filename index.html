@@ -17,13 +17,14 @@
         <h1 class="heading1">Redo för kris?</h1>
         <h3 class="heading3">Gör vårt quiz och ta reda på hur länge du överlever!</h3>
         <button class="btn__start">Starta quizet</button>
-    </section>
+    </section>   
+    <form name="quizForm" onsubmit="return submitAnswers()"></form>
     <section class="survival__question" id="survival-food">
         <div class="survival__question--block">
             <img src="img/survival-food-burger.jpg" alt="Hamburgare" class="survival__question--img">
         </div>
         <div class="survival__question--block">
-            <form name="quizForm" onsubmit="return submitAnswers()">
+         
                 <h2 class="heading2">Vad blir det för mat?</h2>
                 <input type="radio" name="q1" value="a" id="q1a">a.Skaldjursplatå<br>
                 <input type="radio" name="q1" value="b" id="q1b">b.Pasta <br>
