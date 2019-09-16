@@ -56,6 +56,18 @@ body {
     transform: translateY(3px);
 }
 
+.btn__next {
+    font-size: 2rem;
+    border: none;
+    border-radius: 2rem;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.btn__next:hover::after {
+ content: ' \2192';
+}
+
 .survival__start {
     display: flex;
     justify-content: center;
@@ -76,7 +88,7 @@ body {
     width: 50vw;
     align-self: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
 }
@@ -85,4 +97,14 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.question {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.question:hover {
+  text-decoration: underline;
 }
