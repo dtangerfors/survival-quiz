@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
 
     <title>Hur länge klarar du en kris?</title>
 </head>
+
 <body data-hijacking="off" data-animation="gallery">
     <section class="survival__start" id="survival__start">
         <h1 class="heading1">Redo för kris?</h1>
@@ -21,13 +23,11 @@
             <img src="img/survival-food-burger.jpg" alt="Hamburgare" class="survival__question--img">
         </div>
         <div class="survival__question--block">
-            <h2 class="heading2">Vad blir det för mat?</h2>
-            <div class="questions-block">
-                <p class="question">Skaldjursplatå</p>
-                <p class="question">Pasta</p>
-                <p class="question">En cheese</p>
-            </div>
-            <button class="btn__next">Nästa fråga</button>
+            <form name="quizForm" onsubmit="return submitAnswers()">
+                <h2 class="heading2">Vad blir det för mat?</h2>
+                <input type="radio" name="q1" value="a" id="q1a">a.Skaldjursplatå<br>
+                <input type="radio" name="q1" value="b" id="q1b">b.Pasta <br>
+                <input type="radio" name="q1" value="c" id="q1c">c.En cheese <br>
         </div>
     </section>
     <section class="survival__question" id="survival-safety">
@@ -36,6 +36,9 @@
         </div>
         <div class="survival__question--block">
             <h2 class="heading2">Mobilen dör – vad gör du?</h2>
+            <input type="radio" name="q2" value="a" id="q2a">a.Powerbank<br>
+            <input type="radio" name="q2" value="b" id="q2b">b.Ger upp på livet<br>
+            <input type="radio" name="q2" value="c" id="q2c">c.Tar fram vevladdaren<br>
         </div>
     </section>
     <section class="survival__question" id="survival-sleep">
@@ -43,7 +46,10 @@
             <img src="img/surival-sleep-lightning.jpg" alt="Lampa" class="survival__question--img">
         </div>
         <div class="survival__question--block">
-                <h2 class="heading2">Hur ligger du?</h2>
+            <h2 class="heading2">Hur ligger du?</h2>
+            <input type="radio" name="q2" value="a" id="q2a">a.Hela natten<br>
+            <input type="radio" name="q2" value="b" id="q2b">b.En snabbis<br>
+            <input type="radio" name="q2" value="c" id="q2c">c.Någon timme<br>
         </div>
     </section>
     <section class="survival__question" id="survival-water">
@@ -51,7 +57,10 @@
             <img src="img/survival-water-coffee.jpg" alt="Kaffemugg" class="survival__question--img">
         </div>
         <div class="survival__question--block">
-                <h2 class="heading2">Vad klarar du dig inte utan?</h2>
+            <h2 class="heading2">Vad klarar du dig inte utan?</h2>
+            <input type="radio" name="q2" value="a" id="q2a">a.Bärs<br>
+            <input type="radio" name="q2" value="b" id="q2b">b.Vatten<br>
+            <input type="radio" name="q2" value="c" id="q2c">c.Kaffeeeee<br>
         </div>
     </section>
     <section class="survival__question" id="survival-heat">
@@ -59,8 +68,16 @@
             <img src="img/survival-heat-match.jpg" alt="Tändsticka" class="survival__question--img">
         </div>
         <div class="survival__question--block">
-                <h2 class="heading2">Det är kallt inne – hur värmer du dig?</h2>
+            <h2 class="heading2">Det är kallt inne – hur värmer du dig?</h2>
+            <input type="radio" name="q3" value="a" id="q3a">a.Tänder eldstaden/gasolkaminen<br>
+            <input type="radio" name="q3" value="b" id="q3b">b.Värme? Usch!<br>
+            <input type="radio" name="q3" value="b" id="q3c">c.Tar på mig extra kläder<br>
         </div>
+
+    </section>
+    <section>
+        <input type="submit" value="Lämna in svar">
+        </form>
     </section>
 
 
@@ -69,4 +86,5 @@
     <script src="js/velocity.ui.min.js"></script>
     <script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
+
 </html>
