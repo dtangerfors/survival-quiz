@@ -79,7 +79,7 @@ a {
 
 .btn:focus {
   outline: none;
-  border: 1px solid red;
+  background-color: rgb(199, 199, 199);
 }
 
 .btn:hover {
@@ -106,18 +106,13 @@ a {
 }
 
 .btn__next {
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    border: 1px solid black;
     border-radius: 2rem;
-    -webkit-appearance: none;
-    cursor: pointer;
 }
 
 .btn__next:hover {
  background-color: #000000;
  color: #fff;
- transform: translateY(3px);
+ 
 }
 
 .btn__prevSection {
