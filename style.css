@@ -42,12 +42,6 @@ body {
     }
   }
 
-  .heading1, .heading2 {
-    font-family: "poynter-oldstyle-display-nar", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-
 .heading1 {
     font-size: 7rem;
     font-weight: 700;
@@ -55,7 +49,9 @@ body {
 
 .heading2 {
     font-size: 5.5rem;
+    font-family: "poynter-oldstyle-display-nar", serif;
     font-weight: 700;
+    font-style: normal;
     text-align: center;
 }
 
