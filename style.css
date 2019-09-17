@@ -198,14 +198,10 @@ a {
   cursor: pointer;
   transition: all 0.25s linear;
   font-size: 1.4em;
-  
 }
 .label::before {
   display: inline-block;
   content: "";
   margin-right: 0.625rem;
   transition: all 0.25s linear;
-  
 }
-
-
